@@ -1,4 +1,4 @@
-📺 Netflix Landing Page Clone
+📺 Netflix Landing Page Clone - EM ANDAMENTO
 
 Projeto front-end desenvolvido com HTML, CSS e JavaScript que replica a página inicial do Netflix. Este é um projeto educacional para praticar habilidades de desenvolvimento web, criando uma interface moderna, responsiva e interativa. A página inclui uma hero section com fundo desfocado, um carrossel dinâmico de conteúdo, FAQs interativas, formulário de inscrição com validação visual, e suporte a temas claro e escuro.
 
