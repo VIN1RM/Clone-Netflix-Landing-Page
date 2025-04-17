@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /* Scroll suave para links internos */
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/images/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Aplica desfoque à imagem */
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
+
+nav {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 1; /* Garante que a nav fique acima do fundo */
+}
+
+.logo {
+    height: 40px;
+}
+
+.btn-login {
+    background: #e50914;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s; /* Animação suave */
+}
+
+.btn-login:hover {
+    background: #f40612;
+    transform: scale(1.05);
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+    z-index: 1; /* Garante que o conteúdo fique acima do fundo */
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.email-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#email-input, #email-input-footer {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    width: 300px;
+    max-width: 100%;
+    transition: border 0.3s; /* Animação para validação visual */
+}
+
+.email-input-error {
+    border: 2px solid #e50914; /* Borda vermelha para erro */
+}
+
+.btn-cta {
+    background: #e50914;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Animação suave */
+}
+
+.btn-cta:hover {
+    background: #f40612;
+    transform: scale(1.05);
+}
+
+/* Content Sections */
+.content {
+    border-top: 8px solid #222;
+}
+
+.content-item {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.content-img {
+    width: 400px; /* Tamanho fixo para consistência */
+    height: 300px; /* Proporção 4:3 */
+    object-fit: cover; /* Garante proporção uniforme sem distorção */
+    border-radius: 10px; /* Toque moderno */
+}
+
+.text h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 18px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* FAQ Section */
+.faq {
+    border-top: 8px solid #222;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.accordion {
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.accordion-item {
+    background: #303030;
+    margin-bottom: 5px;
+}
+
+.accordion-header {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Animação suave */
+}
+
+.accordion-header:hover {
+    background: #444; /* Efeito hover no accordion */
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    font-size: 18px;
+    text-align: left;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Animação suave */
+}
+
+.accordion-content.active {
+    max-height: 200px; /* Ajuste conforme o conteúdo */
+    padding: 15px;
+}
+
+/* Footer */
+footer {
+    border-top: 8px solid #222;
+    padding: 40px 20px;
+    text-align: center;
+    color: #757575;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: #757575;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 32px;
+    }
+    .hero-content p {
+        font-size: 18px;
+    }
+    .content-item {
+        flex-direction: column;
+    }
+    .content-img {
+        width: 100%;
+        height: 200px; /* Altura reduzida para mobile */
+    }
+    .reverse {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clone da página inicial do Netflix, um projeto educacional em HTML, CSS e JavaScript.">
+    <meta name="keywords" content="Netflix clone, landing page, HTML, CSS, JavaScript">
+    <meta name="author" content="VIN1RM">
+    <title>Netflix Clone - Landing Page</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="home" class="hero">
+        <nav>
+            <img src="assets/images/logo.png" alt="Netflix Logo" class="logo">
+            <button class="btn-login">Entrar</button>
+        </nav>
+        <div class="hero-content">
+            <h1>Filmes, séries e muito mais, sem limites</h1>
+            <p>Assista onde quiser. Cancele quando quiser.</p>
+            <form class="email-form">
+                <input type="email" id="email-input" placeholder="E-mail" required>
+                <button type="submit" class="btn-cta">Comece agora</button>
+            </form>
+        </div>
+    </header>
+
+    <section class="content">
+        <div class="content-item">
+            <div class="text">
+                <h2>Aproveite na TV</h2>
+                <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV e mais.</p>
+            </div>
+            <img src="assets/images/tv.jpg" alt="TV" class="content-img" loading="lazy">
+        </div>
+        <div class="content-item reverse">
+            <div class="text">
+                <h2>Baixe suas séries para assistir offline</h2>
+                <p>Salve seus favoritos facilmente e assista sem internet.</p>
+            </div>
+            <img src="assets/images/celular.jpg" alt="Download" class="content-img" loading="lazy">
+        </div>
+        <div class="content-item">
+            <div class="text">
+                <h2>Assista em qualquer lugar</h2>
+                <p>Assista em celulares, tablets, laptops e TVs.</p>
+            </div>
+            <img src="assets/images/tablet.jpeg" alt="Devices" class="content-img" loading="lazy">
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2>Perguntas frequentes</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false" aria-controls="faq1">O que é a Netflix?</button>
+                <div class="accordion-content" id="faq1">
+                    <p>A Netflix é um serviço de streaming que oferece uma ampla variedade de séries, filmes e documentários.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false" aria-controls="faq2">Quanto custa a Netflix?</button>
+                <div class="accordion-content" id="faq2">
+                    <p>Os planos variam de acordo com suas necessidades. Comece com um plano básico e cancele quando quiser.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false" aria-controls="faq3">Onde posso assistir?</button>
+                <div class="accordion-content" id="faq3">
+                    <p>Assista em qualquer dispositivo com conexão à internet, como TVs, celulares e tablets.</p>
+                </div>
+            </div>
+        </div>
+        <form class="email-form">
+            <p>Pronto para assistir? Informe seu e-mail para começar.</p>
+            <input type="email" id="email-input-footer" placeholder="E-mail" required>
+            <button type="submit" class="btn-cta">Comece agora</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Perguntas? Ligue para 0800-123-4567</p>
+        <div class="footer-links">
+            <a href="#">FAQ</a>
+            <a href="#">Central de Ajuda</a>
+            <a href="#">Termos de Uso</a>
+            <a href="#">Privacidade</a>
+            <a href="#home">Voltar ao Topo</a>
+        </div>
+        <p>© 2025 Netflix Clone. Projeto VIN1RM.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
